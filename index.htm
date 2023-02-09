@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Elektrotechnika</h1>
+        <p>PRĄD JEDNOFAZOWY</p>
+        <p>Kliknij co chcesz obliczyć</p>
+    </header>
+
+    <div class="calculations">
+        <button class="btn-menu-s">S</button>
+        <button class="btn-menu-q">Q</button>
+        <button class="btn-menu-i">I</button>
+        <button class="btn-menu-ir">I<span>R</span></button>
+        <button class="btn-menu-il">I<span>L</span></button>
+    </div>
+
+    <!-- S -->
+    <div class="all-calculators">
+        <h2>Oblicz</h2>
+        <div class="calculator-s">
+            <h3>Oblicz S</h3>
+            <label for="">S: U * I: </label><input class="input_s_first" placeholder="Podaj wartość U" type="text">
+            <input class="input_value input_s_second" placeholder="Podaj wartość I" type="text">
+            <button class="cal-s">Oblicz</button>
+            <p class="sum-p"></p>
+        </div>
+    
+        <!-- Q -->
+        <div class="calculator-q">
+            <h3>Oblicz Q</h3>
+            <label for="">Q = √S<sup>2</sup>-P<sup>2</sup></label>
+            <input placeholder="Podaj wartość S" type="text" class="input_value inputQ">
+            <input placeholder="Podaj wartość P" type="text" class="input_value inputQ2">
+            <button class="cal-q">Oblicz</button>
+            <p class="sum-q"></p>
+        </div>
+        <!-- I -->
+        <div class="calculator-i">
+            <h3>Oblicz I</h3>
+            <label for="">I = P/U * cosφ</label>
+            <input placeholder="Podaj wartość P" type="text" class="input_value inputI">
+            <input placeholder="Podaj wartość U" type="text" class="input_value inputI2">
+            <input placeholder="Podaj wartość cosφ" type="text" class="input_value inputI3">
+            <button class="cal-i">Oblicz</button>
+            <p class="sum-i"></p>
+        </div>
+        <!-- Ir -->
+        <div class="calculator-ir">
+            <h3>Oblicz Ir</h3>
+            <label for="">IR = cosφ * I</label>
+            <input placeholder="Podaj wartość cosφ" type="text" class="input_value inputir">
+            <input placeholder="Podaj wartość I" type="text" class="input_value inputir2">
+            <button class="cal-ir">Oblicz</button>
+            <p class="sum-ir"></p>
+        </div>
+        <!-- Il -->
+        <div class="calculator-il">
+            <h3>Oblicz IL</h3>
+            <label for="">IL = √I<sup>2</sup>-Ir<sup>2</sup></label>
+            <input placeholder="Podaj wartość I" type="text" class="input_value inputIl">
+            <input placeholder="Podaj wartość Ir" type="text" class="input_value inputIl2">
+            <button class="cal-il">Oblicz</button>
+            <p class="sum-il"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Kuskoś © 2023</p>
+    </footer>
+    <script src="./dist/index.js"></script>
+</body>
+</html>
